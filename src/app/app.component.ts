@@ -1,14 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { CounterComponent } from "./counter/counter.component";
 import { HostLisnerComponent } from "./host-lisner/host-lisner.component";
 import { PreserveWhitespaceComponent } from "./preserve-whitespace/preserve-whitespace.component";
+import { EncapulationComponent } from "./encapulation/encapulation.component";
+import { ParentComponent } from "./parent/parent.component";
+import { SuperComponent } from "./super/super.component";
 
 
 @Component({
   selector: 'app-root',
-  imports: [PreserveWhitespaceComponent],
+  imports: [PreserveWhitespaceComponent, EncapulationComponent, ParentComponent, SuperComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  // encapsulation:ViewEncapsulation.ShadowDom
 })
 export class AppComponent {
   title = 'firstApp';
