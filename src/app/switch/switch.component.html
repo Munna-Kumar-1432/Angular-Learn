@@ -1,0 +1,16 @@
+<div>
+    @switch (userRole) {
+       @case ('Admin') {
+        <h1>Admin</h1>
+       }
+       @case ('User') {
+        <h2>User</h2>
+       }
+       @case ('Guest') {
+        <p>Guest</p>
+       }
+       @default {
+        <div>Kuchh Bhi Yarr..</div>
+       }
+    }
+</div>

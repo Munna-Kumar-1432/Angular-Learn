@@ -1,0 +1,11 @@
+<div>
+    <h1>Welcome Back To All Users</h1>
+    @for(user of users; let i= $index; let even = $even; let odd = $odd; let first = $first;  track user.id){
+        <h1>{{i}} ==>  {{user.name}}</h1>
+        @if(even){
+            <div>
+                First User : {{user.name}}
+            </div>
+        }
+    }
+</div>
