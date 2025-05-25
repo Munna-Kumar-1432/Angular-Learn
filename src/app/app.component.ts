@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CounterComponent } from "./counter/counter.component";
+import { HostLisnerComponent } from "./host-lisner/host-lisner.component";
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [HostLisnerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
