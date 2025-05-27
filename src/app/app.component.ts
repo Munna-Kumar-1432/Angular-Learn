@@ -8,11 +8,12 @@ import { SuperComponent } from "./super/super.component";
 import { IfDirectiveComponent } from "./if-directive/if-directive.component";
 import { SwitchComponent } from "./switch/switch.component";
 import { LoopComponent } from "./loop/loop.component";
+import { ProductDataComponent } from "./product-data/product-data.component";
 
 
 @Component({
   selector: 'app-root',
-  imports: [PreserveWhitespaceComponent, EncapulationComponent, ParentComponent, SuperComponent, IfDirectiveComponent, SwitchComponent, LoopComponent],
+  imports: [PreserveWhitespaceComponent, EncapulationComponent, ParentComponent, SuperComponent, IfDirectiveComponent, SwitchComponent, LoopComponent, ProductDataComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   // encapsulation:ViewEncapsulation.ShadowDom
